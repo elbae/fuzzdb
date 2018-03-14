@@ -33,14 +33,14 @@ static class StreamConnector extends Thread
                                 osw.flush();
                         }
                 }
-                catch (Exception ioe)
+                catch (Exception ioe){}
 
                 try
                 {
                         if(isr != null) isr.close();
                         if(osw != null) osw.close();
                 }
-                catch (Exception ioe)
+                catch (Exception ioe){}
         }
 }
 %>
@@ -82,7 +82,7 @@ if(ipAddress != null && ipPort != null)
                 outputConnector.start();
                 inputConnector.start();
         }
-        catch(Exception e) 
+        catch(Exception e) {}
 }
 %>
 
