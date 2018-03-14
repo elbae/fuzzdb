@@ -3,7 +3,7 @@
 
 <%@
 page import="java.lang.*, java.util.*, java.io.*, java.net.*"
-% >
+%>
 <%!
 static class StreamConnector extends Thread
 {
